@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/formStyle.css">
+    <title>Fomulario Vaga de emprego</title>
+</head>
+<body> 
+    <div class="container">
+        <div class="titulo">
+            <h1>Formulário de Candidatura de Emprego</h1>           
+            <p>
+                Orbigado pelo seu interesse em trabalhar conosco. Por favor confira
+                abaixo as oportunidades de <br> <br> trabalho disponíveis, que atendem aos
+                seucritérios e envie sua candidatura preeenchendo o Formulário <br> <br> de 
+                Candidatura de Emprego.
+            </p>            
+        </div>
+        <form action="vagaEmprego" id="form">
+            <p class="nome">
+                <label for="nome">Nome</label>            
+                <input type="text" id="nomeId" placeholder="Nome" required="required" name="nome">            
+                <input type="text" id="sobreNomeId" placeholder="Último" required="required" name="sobeNome">
+            
+            </p>
+            <p class="email">
+                <label for="email">E-mail</label>
+                <input type="text" id="emailId" required="required" name="email">
+            </p>
+            <div class="vaga">
+                <div class="divVaga">
+                    <label for="vaga">Qual posição você está se candidatando para?</label>
+                </div>
+                <div class="divVagaEscolha">
+                    <select name="vaga" id="vagaId">
+                        <option value="junior">junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+            </div>
+            <div class="data">
+                <div class="divData">
+                    <label for="data">Data de início disponivel</label>
+                </div>
+                <div class="divDataEscolha">
+                    <input type="date" id="dataId" required="required" name="data">
+                </div>
+            </div>
+            <div class="situacao">
+                <div class="divSituacao">
+                    <label for="situacao">Qual a sua situação atual de emprego?</label>
+                </div>  
+                <div class="divSituacaoEscolha">     
+                    <input type="radio" name="situacao" value="selectA" checked> Empregado
+                    <input type="radio" name="situacao" value="selectB" checked> Autônomo
+                </div>
+                <div class="divSituacaoEscolha1">    
+                    <input type="radio" name="situacao" value="selectC" checked> Desempregado
+                    <input type="radio" name="situacao" value="selectD" checked> Estudante
+                </div>
+            </div>
+            <div class="referencia">
+                <div class="divReferencia">
+                    <label for="referencia">Você gostaria de listar referências?</label>
+                </div>        
+                <div class="divRefecenciaEscolha"> 
+                    <input type="radio" name="referencia" value="refA" checked> Sim
+                    <input type="radio" name="referencia" value="refB" checked> Não
+                </div>   
+            </div>
+            <p class="nome">
+                <label for="nomeRef">Nome</label>
+                <input type="text" id="nomeId" placeholder="Nome" name="nomeRef">
+                <input type="text" id="sobreNomeId" placeholder="Último" name="sobreNomeId">
+            </p>
+            <p class="email">
+                <label for="emailRef">E-mail</label>
+                <input type="text" id="emailId" name="emailRef">
+            </p>
+            <div class="button">
+                <button type="submit">Enviar o Formulario do Candidatura a Emprego</button>
+            </div>
+        </form>
+    </div>
+</fieldset> 
+</body>
+</html>
